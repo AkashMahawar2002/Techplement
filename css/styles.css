@@ -3,10 +3,21 @@
  * Random Quote Generator - CSS
  */
 
- body {
-  background-color: #36b55c;
-  color: white;
-  font-family: 'Playfair Display', serif;
+/* Define CSS variables for the theme */
+:root {
+  --background-color: #2c3e50;
+  --text-color: #ecf0f1;
+  --accent-color: #36b55c;
+  --font-family: 'Playfair Display', serif;
+  --button-border-color: #ecf0f1;
+  --button-hover-bg: rgba(236, 240, 241, 0.55);
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: var(--font-family);
+  transition: background-color 0.5s ease-in-out;
 }
 
 #quote-box {
@@ -16,6 +27,7 @@
   right: 10%;
   width: 80%;
   line-height: .5;
+  animation: fadeIn 1s ease-in-out;
 }
 
 .quote {
@@ -24,6 +36,7 @@
   line-height: 1.1;
   position: relative;
   margin: 0;
+  animation: slideIn 1s ease-in-out;
 }
 
 .quote:before, .quote:after {
@@ -85,18 +98,52 @@
   margin-left: -6em;
   bottom: 75px; 
   border-radius: 4px;
-  border: 2px solid #fff;
-  color: #fff;
+  border: 2px solid var(--button-border-color);
+  color: var(--text-color);
   background-color: transparent;
   padding: 15px 0;
-  transition: .5s ;
+  transition: .5s;
+  animation: pulse 2s infinite;
 }
+
 #loadQuote:hover {
-  background-color: rgba(255,255,255,.55);
+  background-color: var(--button-hover-bg);
 }
 
 #loadQuote:focus {
   outline: none;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 @media (min-width: 420px) {

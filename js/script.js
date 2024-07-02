@@ -51,7 +51,38 @@ const quotes = [
       citation: "Jacula Prudentum",
       year: 1651,
       tags: "sports"
+  },
+  {
+    quote: "The only thing we have to fear is fear itself.",
+    source: "Franklin D. Roosevelt",
+    citation: "First Inaugural Address",
+    tags: "courage, fear, motivation",
+    year: 1933
+  },
+  {
+    quote: "In the end, we will remember not the words of our enemies, but the silence of our friends.",
+source: "Martin Luther King Jr.",
+citation: "Speech",
+tags: "friendship, silence, enemies",
+year: 1965
+  },
+  {
+    quote: "To be yourself in a world that is constantly trying to make you something else is the greatest accomplishment.",
+source: "Ralph Waldo Emerson",
+citation: "Essay",
+tags: "individuality, self, accomplishment",
+year: 1841
+  },
+  {
+    quote: "The only limit to our realization of tomorrow is our doubts of today.",
+source: "Franklin D. Roosevelt",
+citation: "Speech",
+tags: "future, doubts, realization",
+year: 1945
   }
+
+
+
 ];
 
 // function to generate random number
