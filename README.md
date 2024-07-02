@@ -8,13 +8,7 @@
 * When the quote changes, background color changes randomly
 * Quote is auto-refreshed every 20s
 
-## Demo
 
-Active demo - [https://annes99.github.io/A-Random-Quote-Generator/](https://annes99.github.io/A-Random-Quote-Generator/)
-
-## Screenshot
-
-![Example screenshot](./ScreenShot.png)
 
 ## Technologies
 
@@ -30,8 +24,3 @@ Project is: _completed_
 
 Treehouse FSJS Techdegree: project 1 - A Random Quote Generator
 
-## Contact
-
-Created by [@Annes99](https://twitter.com/annesCode)
-
-[https://github.com/annes99](https://github.com/annes99)
